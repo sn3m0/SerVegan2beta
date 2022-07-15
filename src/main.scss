@@ -131,6 +131,8 @@ header {
     margin: 0 auto;
 }
 
+// usar si es necesario
+// Creación de paddings y margins
 @for $i from 1 to $limit {
     .m-#{$i} {
         margin: $i * $unit;
@@ -153,4 +155,10 @@ header {
     .w-#{$i} {
         width: $i * 25%;
     }
+}
+
+// usar si es necesario:
+.mp-special {
+    @extend .m-auto;
+    padding: 4px;
 }
